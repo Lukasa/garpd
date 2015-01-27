@@ -13,7 +13,7 @@
 #include <linux/if_arp.h>
 #include <net/ethernet.h>
 
-#define UNIX_SCK_PATH "/var/opt/test.sck"
+#define UNIX_SCK_PATH "/var/opt/garpd.sck"
 
 /****************************************************************************/
 /* This structure represents a single ARP packet. It's used to allow named  */
