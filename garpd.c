@@ -155,7 +155,7 @@ int main()
         output_len = snprintf(
             output_buffer,
             sizeof(output_buffer),
-            "{\"ip\": %u.%u.%u.%u, \"mac\":%02x:%02x:%02x:%02x:%02x:%02x}\n",
+            "{\"ip\": \"%u.%u.%u.%u\", \"mac\":\"%02x:%02x:%02x:%02x:%02x:%02x\"}\n",
             packet->arp_spa[0],
             packet->arp_spa[1],
             packet->arp_spa[2],
