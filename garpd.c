@@ -11,6 +11,7 @@
 #include <sys/un.h>
 #include <linux/if_ether.h>
 #include <linux/if_arp.h>
+#include <netinet/in.h>
 #include <net/ethernet.h>
 
 #define UNIX_SCK_PATH "/var/opt/garpd.sck"
@@ -41,7 +42,7 @@ int create_unix_socket(const char *sockname,
                        int *unix_sck)
 {
     int connection;
-    int remote_size;
+    socklen_t remote_size;
     struct sockaddr_un sockdata;
     struct sockaddr_un remotedata;
 
